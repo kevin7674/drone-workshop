@@ -6,12 +6,28 @@ clone:
 pipeline:
   step1:
     image: mhart/alpine-node:9.1.0
+    group: testing
     commands:
       - sleep 5
       - node -v
 
   step2:
     image: mhart/alpine-node:9.1.0
+    group: testing
+    commands:
+      - sleep 1
+      - node -v
+
+  step3:
+    image: mhart/alpine-node:9.1.0
+    group: testing2
+    commands:
+      - sleep 5
+      - node -v
+
+  step4:
+    image: mhart/alpine-node:9.1.0
+    group: testing2
     commands:
       - sleep 1
       - node -v
