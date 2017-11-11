@@ -7,4 +7,11 @@ pipeline:
   step1:
     image: mhart/alpine-node:9.1.0
     commands:
+      - sleep 5
+      - node -v
+
+  step2:
+    image: mhart/alpine-node:9.1.0
+    commands:
+      - sleep 1
       - node -v
