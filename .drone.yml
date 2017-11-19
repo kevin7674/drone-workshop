@@ -9,6 +9,7 @@ pipeline:
     group: testing
     secrets: [ test ]
     commands:
+      - echo "node.js"
       - echo $TEST
 
   test2:
@@ -16,4 +17,5 @@ pipeline:
     group: testing
     secrets: [ test ]
     commands:
+      - echo "golang"
       - echo $TEST
