@@ -15,7 +15,8 @@ pipeline:
   test2:
     image: appleboy/golang-testing
     group: testing
-    secrets: [ test46 ]
+    secrets: [ test46, readme ]
     commands:
       - echo "golang"
       - echo $TEST46
+      - echo $README
