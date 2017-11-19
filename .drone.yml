@@ -4,8 +4,15 @@ clone:
     tags: true
 
 pipeline:
-  secret:
+  test1:
     image: mhart/alpine-node:9.1.0
+    group: testing
+    secrets: [ test ]
+    commands:
+      - echo $TEST
+
+  test2:
+    image: appleboy/golang-testing
     group: testing
     secrets: [ test ]
     commands:
