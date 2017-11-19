@@ -7,7 +7,7 @@ pipeline:
   test1:
     image: mhart/alpine-node:9.1.0
     group: testing
-    secrets: [ test ]
+    secrets: [ test46 ]
     commands:
       - echo "node.js"
       - echo $TEST
@@ -15,7 +15,7 @@ pipeline:
   test2:
     image: appleboy/golang-testing
     group: testing
-    secrets: [ test ]
+    secrets: [ test46 ]
     commands:
       - echo "golang"
       - echo $TEST
