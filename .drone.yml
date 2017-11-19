@@ -10,7 +10,7 @@ pipeline:
     secrets: [ test46 ]
     commands:
       - echo "node.js"
-      - echo $TEST
+      - echo $TEST46
 
   test2:
     image: appleboy/golang-testing
@@ -18,4 +18,4 @@ pipeline:
     secrets: [ test46 ]
     commands:
       - echo "golang"
-      - echo $TEST
+      - echo $TEST46
