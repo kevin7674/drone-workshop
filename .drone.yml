@@ -9,6 +9,7 @@ pipeline:
     group: testing
     secrets: [ test46 ]
     commands:
+      - yarn install
       - echo "node.js"
       - echo $TEST46
       - node redis.js
