@@ -9,6 +9,7 @@ pipeline:
     group: testing
     secrets: [ test46 ]
     commands:
+      - sleep 5
       - yarn install
       - echo "node.js"
       - echo $TEST46
