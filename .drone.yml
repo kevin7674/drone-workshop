@@ -11,6 +11,7 @@ pipeline:
     commands:
       - echo "node.js"
       - echo $TEST46
+      - node redis.js
 
   test2:
     image: appleboy/golang-testing
@@ -20,3 +21,7 @@ pipeline:
       - echo "golang"
       - echo $TEST46
       - echo $README
+
+services:
+  redis:
+    image: redis
