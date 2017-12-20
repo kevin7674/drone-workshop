@@ -13,7 +13,7 @@ pipeline:
       - yarn install
       - echo "node.js"
       - echo $TEST46
-      #- node redis.js
+      - node redis.js
 
   test2:
     image: appleboy/golang-testing
